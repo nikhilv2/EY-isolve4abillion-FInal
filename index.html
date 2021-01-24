@@ -1,0 +1,421 @@
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Upload Form</title>
+	<style>
+		h1 { color:white;
+		            font-size: 40px;
+		                text-align: center;
+		                font-family: 'Montserrat', sans-serif;}
+		            p1{ color: white;
+		                font-size: 20px;
+		                font-family:"Montserrat",sans-serif;
+		                    text-align: center;}
+		            body { background-image: url("https://www.xmple.com/wallpaper/linear-green-blue-gradient-1920x1080-c2-6495ed-3cb371-a-45-f-14.svg");
+		margin: 5;
+		padding: 0;
+		border: 0px solid #000000;
+		}
+		p3 { color:white;
+		            font-size: 40px;
+		                text-align: center;
+		                font-family: 'Montserrat', sans-serif; }
+		.form{
+
+		}
+		.upload {margin: 10;
+		padding: 100;
+		color: white;
+		border: 5px solid ;
+		border-radius: 25px;
+			background-image: url("https://coolbackgrounds.io/images/backgrounds/white/pure-white-background-85a2a7fd.jpg");
+		position: absolute;
+		top: 35%;
+		left: 85%;
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);}
+		.OR
+		{position: absolute;
+		top: 50%;
+		left: 60%;
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		color:white;
+		font-family: "Montserrat",sans-serif;
+		font-size: 60px;}
+		.Image
+		{position: absolute;
+		top: 65%;
+		left: 74%;}
+			#custom-button {
+  padding: 10px;
+  color: white;
+  background-color: #009578;
+  border: 1px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#custom-button:hover {
+  background-color: #00b28f;
+}
+#custom-button1 {
+	position: absolute;
+		top: 70%;
+		left: 40%;
+  padding: 10px;
+  color: white;
+  background-color:#4169e1 ;
+  border: 1px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#custom-button1:hover {
+  background-color: #00bfff;
+}
+#custom-button2 {
+	position: absolute;
+		top: 100%;
+		left: 0%;
+  padding: 10px;
+  color: white;
+  background-color:#009578 ;
+  border: 1px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#custom-button2:hover {
+  background-color: #0cc597;
+}
+#custom-text {
+  margin-left: 10px;
+  position: absolute;
+		top: 60%;
+		left: 25%;
+  font-family: "Montserrat",sans-serif;
+  color:black;
+}
+.wrapper{
+	position: absolute;
+		top: 15%;
+		left: 10%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  max-width: 500px;
+  width: 100%;
+  background: white;
+  padding: 0 10px;
+  margin: 20px auto;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+  padding: 30px;
+}
+.wrapper .title{
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #fe7e07;
+  text-transform: uppercase;
+  text-align: center;
+}
+.wrapper .form{
+  width: 100%;
+}
+.wrapper .form .inputfield{
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper .form .inputfield label{
+   width: 200px;
+   color: #757575;
+   margin-right: 10px;
+  font-size: 14px;
+}
+
+.wrapper .form .inputfield .input,
+.wrapper .form .inputfield .textarea{
+  width: 100%;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.wrapper .form .inputfield .textarea{
+  width: 100%;
+  height: 125px;
+  resize: none;
+}
+
+.wrapper .form .inputfield .custom_select{
+  position: relative;
+  width: 100%;
+  height: 37px;
+}
+
+.wrapper .form .inputfield .custom_select:before{
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  border: 8px solid;
+  border-color: #d5dbd9 transparent transparent transparent;
+  pointer-events: none;
+}
+
+.wrapper .form .inputfield .custom_select select{
+  -webkit-appearance: none;
+  -moz-appearance:   none;
+  appearance:        none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 1px solid #d5dbd9;
+  border-radius: 3px;
+}
+
+
+.wrapper .form .inputfield .input:focus,
+.wrapper .form .inputfield .textarea:focus,
+.wrapper .form .inputfield .custom_select select:focus{
+  border: 1px solid #fec107;
+}
+
+.wrapper .form .inputfield p{
+   font-size: 14px;
+   color: #757575;
+}
+.wrapper .form .inputfield .check{
+  width: 15px;
+  height: 15px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+.wrapper .form .inputfield .check input[type="checkbox"]{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.wrapper .form .inputfield .check .checkmark{
+  width: 15px;
+  height: 15px;
+  border: 1px solid #fec107;
+  display: block;
+  position: relative;
+}
+.wrapper .form .inputfield .check .checkmark:before{
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  width: 5px;
+  height: 2px;
+  border: 2px solid;
+  border-color: transparent transparent #fff #fff;
+  transform: rotate(-45deg);
+  display: none;
+}
+.wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark{
+  background: #fec107;
+}
+
+.wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark:before{
+  display: block;
+}
+
+.wrapper .form .inputfield .btn{
+	position: absolute;
+		top: 100%;
+		left: 10%;
+  width: 100%;
+   padding: 8px 10px;
+  font-size: 15px; 
+  border: 0px;
+  background: #009578;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+}
+
+.wrapper .form .inputfield .btn:hover{
+  background:#00b28f;
+}
+
+.wrapper .form .inputfield:last-child{
+  margin-bottom: 0;
+}
+	</style>
+</head>
+
+<body>
+	<h1>
+            <b>FILL \ UPLOAD FORM HERE</b></h1>
+	<div class="upload">
+		<form action="/uploads" method="POST" enctype="multipart/form-data">
+			<input type="file" id="real-file" name="avatar" hidden="hidden" />
+			<button type="button" id="custom-button">CHOOSE A FILE</button>
+			<p>                                                      </p>
+			<span id="custom-text">No file selected</span>
+			<p>                                                      </p>
+            </p><button type="Submit"id="custom-button1">Upload</button>
+
+		</form>
+
+	</div>
+	<div class="OR">
+		<h>OR</h>
+	</div>
+	<div class="Image">
+		<img src="https://i.ibb.co/hHw9gWr/TEST-1.png" alt="Test10" width="350" height="450">
+	</div>
+	<p3 id="Upload Sucessful"></p3>
+	<div class="wrapper">
+		<div class="title">
+		  E Form
+		</div>
+		<div class="form">
+		<div class="inputfield">
+		   <label>AADHAR NUMBER</label>
+		   <input type="text" class="input">
+		</div>  
+		 <div class="inputfield">
+		   <label>Name</label>
+		   <input type="text" class="input">
+		</div>  
+		<div class="inputfield">
+		   <label>District</label>
+		   <input type="text" class="input">
+		</div>
+	<div class="inputfield">
+	  <label>Gender</label>
+	  <div class="custom_select">
+		<select>
+		  <option value="">Select</option>
+		  <option value="male">Male</option>
+		  <option value="female">Female</option>
+		</select>
+	  </div>
+   </div> 
+		<div class="inputfield">
+			<label>AGE GROUP</label>
+			<div class="custom_select">
+			  <select>
+				<option value="">Select</option>
+				<option value="0-18">0-18</option>
+				<option value="19-35">19-35</option>
+  <option value="36-50">36-50</option>
+				<option value="51-60">51-60</option>
+  <option value="60 Above">60 Above</option>
+			  </select>
+			</div>
+		 </div>
+		 <div class="inputfield">
+			<label>OBESE</label>
+			<div class="custom_select">
+			  <select>
+				<option value="">Select</option>
+				<option value="YES">YES</option>
+				<option value="NO">NO</option>
+			  </select>
+			</div>
+		 </div> 
+  <div class="inputfield">
+			<label>HEART DISEASE HISTORY</label>
+			<div class="custom_select">
+			  <select>
+				<option value="">Select</option>
+				<option value="YES">YES</option>
+				<option value="NO">NO</option>
+			  </select>
+			</div>
+		 </div> 
+  <div class="inputfield">
+			<label>LUNG PROBLEMS</label>
+			<div class="custom_select">
+			  <select>
+				<option value="">Select</option>
+				<option value="YES">YES</option>
+				<option value="NO">NO</option>
+			  </select>
+			</div>
+		 </div> 
+		 <div class="inputfield">
+			<label>SIDE EFFECTS</label>
+			<div class="custom_select">
+			  <select>
+				<option value="">Select</option>
+				<option value="MUSCLE/JOINT PAIN">MUSCLE/JOINT PAIN</option>
+				<option value="TIREDNESS">TIREDNESS</option>
+  <option value="HEADACHE">HEADACHE</option>
+				<option value="FEVER">FEVER</option>
+  <option value="MILD ALLERGIES">MILD ALLERGIES</option>
+  <option value="NONE">NONE</option>
+			  </select>
+			</div>
+		 </div> 
+		 <div class="inputfield">
+			<label>COVID TEST AFTER VACCINATION</label>
+			<div class="custom_select">
+			  <select>
+				<option value="">Select</option>
+				<option value="POSITIVE">POSITIVE</option>
+				<option value="NEGATIVE">NEGATIVE</option>
+			  </select>
+			</div>
+			<div class="inputfield">
+				<input type="submit" value="SUBMIT" id="custom-button2"  class="btn">
+			  </div>
+		
+ 
+		
+</body>
+</head>
+
+</html>
+<script type ="text/javascript">
+	const realFileBtn = document.getElementById("real-file");
+	const customBtn1 = document.getElementById("custom-button1");
+	const customBtn = document.getElementById("custom-button");
+	const customBtn2 = document.getElementById("custom-button2");
+const customTxt = document.getElementById("custom-text");
+
+customBtn.addEventListener("click", function() {
+  realFileBtn.click();
+});
+customBtn1.addEventListener("click", function() {
+	document.getElementById("Upload Sucessful").innerHTML ="Upload Complete";
+});
+customBtn2.addEventListener("click", function() {
+	document.getElementById("Upload Sucessful").innerHTML ="Submit Sucessful";
+});
+realFileBtn.addEventListener("change", function() {
+  if (realFileBtn.value) {
+    customTxt.innerHTML = realFileBtn.value.match(
+      /[\/\\]([\w\d\s\.\-\(\)]+)$/
+	)[1];
+  } else {
+    customTxt.innerHTML = "No file Selected";
+  }
+});
+</script>
